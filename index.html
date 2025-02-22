@@ -52,3 +52,57 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falah-ul-Insan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .tab {
+            display: inline-block;
+            background-color: #ffcc00;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .tab.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tab">About Us</div>
+        <div class="tab">Projects</div>
+        <div class="tab">Volunteer</div>
+        <div class="tab">Donate</div>
+        <div class="tab">Contact</div>
+    </div><script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab");
+        tabs.forEach((tab, index) => {
+            setTimeout(() => {
+                tab.classList.add("show");
+            }, index * 500);
+        });
+    });
+</script>
+
+</body>
+</html>
