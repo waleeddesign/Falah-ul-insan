@@ -7,6 +7,7 @@
     <meta name="author" content="Falah-ul-Insan">
     <title>Falah-ul-Insan</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -23,61 +24,26 @@
         </div>
     </header><nav id="sidebar">
     <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#donate">TO DONATE</a></li>
-        <li><a href="#projects">CURRENT PROJECTS</a></li>
-        <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
-        <li><a href="#join">TO JOIN</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="donate.html">TO DONATE</a></li>
+        <li><a href="projects.html">CURRENT PROJECTS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="join.html">TO JOIN</a></li>
     </ul>
 </nav>
 
-<section id="projects">
-    <div class="project">
-        <div class="dropdown">
-            <button onclick="toggleDropdown('ration')">RATION BAG &#9662;</button>
-            <div id="ration" class="dropdown-content">
-                <p>Ration means food... contains various essentials.</p>
-                <img src="ration.png" alt="Ration Bag" class="circle-image">
-            </div>
-        </div>
-        <div class="dropdown">
-            <button onclick="toggleDropdown('eid')">ASAN EID &#9662;</button>
-            <div id="eid" class="dropdown-content">
-                <p>'Asan' means 'easy' and 'Eid' is the festival...</p>
-                <img src="goat.png" alt="Eid Goat" class="circle-image">
-            </div>
-        </div>
-        <div class="dropdown">
-            <button onclick="toggleDropdown('rozgar')">ASAN ROZGAR &#9662;</button>
-            <div id="rozgar" class="dropdown-content">
-                <p>'ASAN' means Easy and 'Rozgar' means employment...</p>
-            </div>
-        </div>
+<section class="hero">
+    <img src="theme-background.jpg" alt="Theme Background" class="background">
+    <div class="overlay">
+        <h2>Welcome to Falah-ul-Insan</h2>
+        <p>Making a Difference, One Step at a Time</p>
     </div>
-</section>
-
-<section id="about">
-    <p>'Falah' means 'for the benefit' and 'Insan' means 'human'. Highlighting: <span style="color: yellow;">For the benefit of human</span>. It is an organization of young students striving to enrich lives.</p>
-    <img src="handshake.png" alt="Handshake" class="circle-image">
-</section>
-
-<section id="contact">
-    <p>Follow us on <a href="https://www.instagram.com/falahul.insan" target="_blank">Instagram</a></p>
-    <p>Contact: <a href="mailto:falahul.insann@gmail.com">falahul.insann@gmail.com</a></p>
-    <img src="contact.png" alt="Contact" class="circle-image">
-</section>
-
-<section id="join">
-    <h2>Click here to Join</h2>
-    <a href="https://forms.gle/dgzGUtss52EAcSpF6" target="_blank">Join Form</a>
 </section>
 
 <footer>
     <p>&copy; 2025 Falah-ul-Insan. All rights reserved.</p>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
