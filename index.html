@@ -2,44 +2,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Falah-ul-Insan - Youthful Passion, Selfless Service. A welfare organization helping the needy.">
-    <meta name="keywords" content="Falah-ul-Insan, welfare, donation, charity, youth, service">
-    <meta name="author" content="Falah-ul-Insan">
     <title>Falah-ul-Insan</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <span class="menu-text">Click Here</span>
-            <div class="hamburger">&#9776;</div>
-        </div>
-        <div class="logo-title">
-            <img src="logo.png" alt="Falah-ul-Insan Logo" class="logo">
-            <div class="title-banner">
-                <h1>FALAH-UL-INSAN</h1>
-                <p>Youthful Passion, Selfless Service.</p>
-            </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776; <span>Click Here</span></div>
+        <div class="logo-container">
+            <img src="logo.png" alt="Falah-ul-Insan Logo">
+            <h1>FALAH-UL-INSAN</h1>
+            <p>Youthful Passion, Selfless Service.</p>
         </div>
     </header><nav id="sidebar">
     <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="donate.html">TO DONATE</a></li>
-        <li><a href="projects.html">CURRENT PROJECTS</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-        <li><a href="join.html">TO JOIN</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#donate">TO DONATE</a></li>
+        <li class="dropdown">
+            <a href="#projects">CURRENT PROJECTS ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="#ration">Ration Bag</a></li>
+                <li><a href="#eid">Asan Eid</a></li>
+                <li><a href="#rozgar">Asan Rozgar</a></li>
+            </ul>
+        </li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+        <li><a href="#join">TO JOIN</a></li>
     </ul>
 </nav>
 
-<section class="hero">
-    <img src="theme-background.jpg" alt="Theme Background" class="background">
-    <div class="overlay">
+<main>
+    <section id="home">
         <h2>Welcome to Falah-ul-Insan</h2>
         <p>Making a Difference, One Step at a Time</p>
-    </div>
-</section>
+    </section>
+
+    <section id="donate">
+        <h2>To Donate</h2>
+        <p>Details coming soon...</p>
+    </section>
+
+    <section id="projects">
+        <h2>Current Projects</h2>
+        <div class="project" id="ration">
+            <h3>Ration Bag</h3>
+            <p>Ration means food. Our project aims to provide food supplies to low-income families.</p>
+        </div>
+        <div class="project" id="eid">
+            <h3>Asan Eid</h3>
+            <p>Distributing meat to underprivileged families during Eid celebrations.</p>
+        </div>
+        <div class="project" id="rozgar">
+            <h3>Asan Rozgar</h3>
+            <p>Providing temporary employment opportunities to those in need.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p><span class="highlight">For the benefit of humans</span> – empowering young students to make a difference.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Follow us on <a href="https://www.instagram.com/falahul.insan" target="_blank">Instagram</a></p>
+        <p>Email: <a href="mailto:falahul.insann@gmail.com">falahul.insann@gmail.com</a></p>
+    </section>
+
+    <section id="join">
+        <h2>To Join</h2>
+        <p><a href="https://forms.gle/dgzGUtss52EAcSpF6" target="_blank">Click here to Join</a></p>
+    </section>
+</main>
 
 <footer>
     <p>&copy; 2025 Falah-ul-Insan. All rights reserved.</p>
