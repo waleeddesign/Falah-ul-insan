@@ -1,50 +1,46 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #145020;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-header {
-    background: green;
-    color: white;
-    padding: 15px;
-    text-align: center;
+/* Main Content Container */
+#root {
+  margin-top: 40px;
 }
 
-.nav-links {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+/* Headings */
+h1 {
+  color: #8fff8f;
+  font-size: 2.5rem;
 }
 
-.nav-links li {
-    display: inline;
-    margin: 0 10px;
+/* Paragraphs */
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
+/* Logo Image */
+img {
+  margin-top: 20px;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background: white;
-    color: black;
-    list-style: none;
-    padding: 5px;
-}
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
+  p {
+    font-size: 1rem;
+  }
 }
