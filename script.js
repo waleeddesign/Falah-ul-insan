@@ -1,5 +1,5 @@
+// Display a welcome message when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".menu-toggle").addEventListener("click", () => {
-        document.querySelector(".nav-links").classList.toggle("active");
-    });
+  console.log("Welcome to FALAH-UL-INSAN!");
+  alert("Thank you for visiting FALAH-UL-INSAN!");
 });
